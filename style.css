@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Teko&display=swap');
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    margin-left: 51px;
+    margin-right: 51px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.logo {
+    font-family: Teko;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 9.275px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo a svg {
+    margin-right: 16px;
+    margin-top: -5px;
+}
+
+nav, .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 57px;
+    font-family: Inter;
+    font-size: 22.489px;
+    line-height: 14px;
+}
+
+nav ul li :hover{
+    font-weight: 700;
+}
+
+.dropdown{
+    position: relative;
+    font-family: Inter;
+    font-size: 22px;
+}
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background: #EBE1FF;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 12px;
+}
+
+.dropdown ul li{
+    padding: 12px;
+}
+
+.dropdown:hover ul{
+    display: block;
+    margin-left: -36px;
+}
+
+.dropdown a svg{
+    margin-left: 8px;
+}
+
+form{
+    margin-left: 37px;
+    position: relative;
+}
+
+form i {
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: 16px;
+}
+
+form input {
+    border-radius: 38px;
+    background: linear-gradient(275deg, #B896FF -18.36%, #D6C3FE 29.5%, #DCA5E9 106.85%);
+    backdrop-filter: blur(12px);
+    outline: none;
+    font-size: 22px;
+    padding: 8px 10px 8px 50px;
+    max-width: 188px;
+    outline: none;
+    color: white;
+}
+
+form input::placeholder{
+    color: white;
+}
+
+#home{
+    border-radius: 26px;
+    background: #EBE1FF;
+    position: relative;
+}

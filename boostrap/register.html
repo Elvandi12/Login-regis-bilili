@@ -1,0 +1,92 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <main class="container d-flex justify-content-center align-items-center h-100">
+      <div class="shadow rounded-5 overflow-hidden">
+        <div class="row mx-4 my-4">
+          <div class="col-6">
+            <img src="https://www.static-src.com/frontend/member/static/3.94.0-12/desktop/img/desktop-login.50a5a8ff.png" alt="login image" class="img-fluid">
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <div>
+              <h3 class="text-center text-primary mb-3">Masuk ke akunmu</h3>
+              <form action="" class="shadow p-3 rounded-3">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control border-0" id="floatingInput" placeholder="">
+                    <label for="floatingInput">Nama Lengkap</label>
+                  </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control border-0 email" id="floatingInput" placeholder="">
+                  <label for="floatingInput">Email / Nomor Hp</label>
+                </div>
+                <div class="form-floating" >
+                  <input type="password" class="form-control border-0 Password"  id="floatingPassword" placeholder="">
+                  <label for="floatingPassword">Password</label>
+                  <i id="toggle-password"></i>
+                </div>
+                <button type="button" class="btn text-primary " data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+                <div class="align-items-center justify-content-center d-flex">
+                  <button class="mb-3 rounded-5 px-5 py-2 text-bg-primary border-0 mt-2 tombol">
+                    Daftar
+                  </button>
+                </div>
+                <div>
+                  <button class="border-0 text-primary btn">
+                    <svg data-v-deb3d526="" xmlns="http://www.w3.org/2000/svg" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="24" height="24" viewBox="0 0 24 24" data-v-42947003=""><path d="M12.3048 12.3648C12.1049 12.4547 11.8751 12.4547 11.6752 12.3648L2 7.8576V6.7283C2 5.22923 3.21939 4.00999 4.71864 4H19.2714C20.7706 4 21.99 5.21924 21.99 6.71831V7.8476L12.3048 12.3648ZM11.985 13.4341C12.2349 13.4341 12.4948 13.3841 12.7246 13.2742H12.7346L22 8.95688V17.2817C22 18.7808 20.7806 20 19.2814 20H4.71864C3.21939 20 2 18.7808 2 17.2817V8.95688L11.2454 13.2742C11.4853 13.3841 11.7351 13.4341 11.985 13.4341Z"></path></svg>Masuk dengan nomor HP
+                  </button>
+                  <button class="border-0 text-primary btn">
+                    <svg data-v-deb3d526="" xmlns="http://www.w3.org/2000/svg" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="24" height="24" viewBox="0 0 24 24" data-v-42947003=""><path d="M19.4911 2H15.4931C14.1131 2 12.9944 3.11929 12.9944 4.5V8.5C12.9944 9.88071 14.1131 11 15.4931 11H19.4911C20.8711 11 21.9898 9.88071 21.9898 8.5V4.5C21.9898 3.11929 20.8711 2 19.4911 2ZM8.49668 13H4.49872C3.11872 13 2 14.1193 2 15.5V19.5C2 20.8807 3.11872 22 4.49872 22H8.49668C9.87669 22 10.9954 20.8807 10.9954 19.5V15.5C10.9954 14.1193 9.87669 13 8.49668 13ZM17.9621 14.01C17.9621 13.45 18.4118 13 18.9715 13L18.9815 13.01C20.6507 13.01 22 14.37 22 16.03C22 16.59 21.5502 17.04 20.9905 17.04C20.4308 17.04 19.981 16.59 19.981 16.03C19.981 15.47 19.5313 15.02 18.9715 15.02C18.4118 15.02 17.9621 14.57 17.9621 14.01ZM20.9903 17.98C20.4306 17.98 19.9808 18.43 19.9808 18.99C19.9808 19.55 19.531 20 18.9713 20H16.0028C15.4531 20 14.9934 19.55 14.9934 18.99V16.02C14.9934 15.73 15.1233 15.45 15.3432 15.26C15.5231 15.1 15.763 15.02 16.0028 15.02C16.5626 15.02 17.0123 14.57 17.0123 14.01C17.0123 13.45 16.5626 13 16.0028 13C15.2732 13 14.5736 13.26 14.0339 13.73C13.3742 14.3 12.9944 15.14 12.9944 16.01V18.98C12.9944 20.64 14.3437 22 16.0128 22H18.9813C20.6405 22 21.9998 20.65 21.9998 18.98C21.9998 18.42 21.55 17.97 20.9903 17.97V17.98ZM5.01846 2H7.97695H7.98694C9.65609 2 11.0054 3.36 11.0054 5.02V7.99C11.0054 9.66 9.64609 11.01 7.98694 11.01H5.01846C3.34931 11.01 2 9.65 2 7.99V5.02C2 3.35 3.34931 2 5.01846 2ZM7.97695 8.99C8.53666 8.99 8.98643 8.53 8.98643 7.98L8.99643 7.99V5.02C8.99643 4.46 8.53666 4.01 7.98694 4.01H5.01846C4.45874 4.01 4.00897 4.47 4.00897 5.02V7.98C4.00897 8.54 4.46874 8.99 5.01846 8.99H7.97695Z"></path></svg>
+                    masuk dengan QR
+                  </button>
+                  <button class="border-0 btn text-bg-danger py-1">Baru</button>
+                </div>
+              </form>
+              <div>
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                  <button class="border-0 btn shadow rounded-5 me-3 ms-3"><img src="https://www.static-src.com/frontend/member/static/3.94.0-12/desktop/img/facebook.3cbc9602.svg" alt="" class="pe-1">Facebook</button>
+                  <button class="border-0 btn shadow rounded-5 me-3"><img src="https://www.static-src.com/frontend/member/static/3.90.0-1/desktop/img/google.fa6e9370.svg" alt="" class="pe-1">Google</button>
+                </div>
+                <p class="d-flex justify-content-center align-items-center mt-3 ">Tidak punya akun? <a href="">Daftar</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">account: </label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

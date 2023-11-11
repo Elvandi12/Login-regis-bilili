@@ -1,0 +1,54 @@
+body{
+    height: 100vh !important;
+}
+
+.shadow{
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5) !important;
+}
+
+input{
+    background: #F1F2F2 !important;
+}
+
+input:hover{
+    background: #E1E3E4 !important;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus{
+    outline: none !important;
+    border: 2px solid #0F6DEA !important;
+    
+}
+
+label::after{
+    background: none !important;
+    color: #0F6DEA !important;
+}
+
+.form-control:focus ~ label{
+    color: #0F6DEA !important;
+}
+.small{
+    font-size: 0.8rem !important;
+}
+
+i{
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1;
+    content: url(eye.svg);
+}
+
+.eye-slash{
+    content: url(eye-slash.svg);
+}
+
+.tombol:disabled{
+    background-color: rgb(163, 163, 163) !important;
+    color: rgb(84, 84, 84) !important;
+    border: 0 !important;
+    cursor: not-allowed !important;
+}
